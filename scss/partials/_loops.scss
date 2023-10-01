@@ -1,0 +1,9 @@
+@for $i from 1 through 3 {
+    h#{$i}{
+        font-family: $titleFont;
+        font-weight: bold;
+        font-size: 50px-10*$i;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+}

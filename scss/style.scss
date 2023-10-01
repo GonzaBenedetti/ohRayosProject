@@ -1,0 +1,206 @@
+@import "./partials/fonts";
+@import "./partials/variables";
+@import "./partials/normalize";
+
+.containerFluid {
+    max-width: 100%;
+    margin: auto;
+    padding: 8px;
+}
+.container {
+    max-width: 80%;
+    margin: auto;
+    padding: 8px;
+}
+
+body {
+    background-color: $background;    
+    font-family: $primaryFont;
+    color: $primaryColor;
+}
+.header {
+    nav {
+        background-color: rgba(0, 0, 0, 0.493);
+        .logoNav {
+            img {
+                width: 80px;
+            }
+        }
+        .listNav {
+            width: 100%;
+            display: flex;
+            justify-content: end;
+            margin: auto 0;
+            list-style: none;
+            padding: 5px;
+            .listItems {
+                margin: 0 10px;
+                transition: all .25s;
+                .listLink {
+                    font-family: $primaryFont;
+                    font-weight: bold;
+                    font-size: 19px;
+                    color: $primaryColor;
+                    text-decoration: none;
+
+                    transition: all .25s;
+                    &:hover {
+                        color: $mediumGrey;
+                    }
+                }
+            }
+        }
+    }
+    
+    .fontPage {
+        position: relative;
+        .carousel {
+            height: 100vh;
+    
+            animation: fontPage 50s infinite;
+        }
+        .mainTitle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);        
+            text-align: center;
+            font-weight: bold;
+            h1 {
+                font-size: 90px;
+            }
+            p {
+                font-size: 20px;
+            }
+        }
+        .plataforms {
+            display: flex;
+            justify-content: space-evenly;
+            a {
+                color: white;
+                transition: all .25s;
+                i {
+                    font-size: 35px;
+                }
+                &:hover {
+                    color: $mediumGrey;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    @keyframes fontPage {
+        0% {
+            background: url(../assets/carouselNav/img1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: .5;
+            }
+            50% {
+                background: url(../assets/carouselNav/img2.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                opacity: .5;
+            }
+            100% {
+                background: url(../assets/carouselNav/img3.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                opacity: .5;
+            }
+        }
+}
+
+.sectionBH {
+    margin-top: 15px;
+    .containerBH {
+        h2 {
+            text-align: center;
+        }
+        .containerCard {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap
+        }
+    }
+}
+
+.sectionRec {
+    margin-top: 15px;
+    .containerRe {
+        h2 {
+            text-align: center;
+        }
+        .containerCard {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap
+        }
+    }
+}
+
+.sectionBl {
+    margin-top: 15px;
+    .containerBH {
+        h2 {
+            text-align: center;
+        }
+        .containerCard {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap
+        }
+    }
+}
+
+footer {
+    background-color: $grey;
+    .containerFooter {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 30px;
+        .imgFooter {
+            img {
+                width: 200px;
+            }
+        }
+        .networks {
+            margin: 35px;
+            text-align: center;
+            h3 {
+                font-size: 25px;
+            }
+            a {
+                i {
+                    font-size: 30px;
+                    margin: 0 15px;
+                    color: $primaryColor;
+                    transition: all .3s;
+                    &:hover {
+                        color: $mediumGrey;
+                        transform: scale(1.25);
+                    }
+                }
+            }
+        }
+    }
+    .containerCopy {
+        background-color: $mediumGrey;
+        p {
+            text-align: center;
+            font-weight: bold;
+            margin: 0;
+            padding: 15px;
+            color: #000000
+        }
+    }
+}
+
+@import "./partials/_loops.scss";
+@import "./partials/components";
+@import "./partials/queries";

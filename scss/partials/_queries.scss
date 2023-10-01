@@ -1,0 +1,44 @@
+@media screen and (max-width: 991px) {
+    .header {
+        nav {
+            .listNav {
+                flex-direction: column;
+                .listItems {
+                    margin: 15px 0;
+                    .listLink {
+                        &:hover {
+                            color: $primaryColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1045px) {
+    .sectionBH {
+        .containerBH {
+            .containerCard {
+                justify-content: center;
+            }
+        }
+    }
+    
+    .sectionRec {
+        .containerRe {
+            .containerCard {
+                justify-content: center;
+            }
+        }
+    }
+    
+    .sectionBl {
+        .containerBH {
+            .containerCard {
+                justify-content: center;
+            }
+        }
+    }
+    
+}

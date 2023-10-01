@@ -1,0 +1,88 @@
+.card {
+    background-color: $background;
+    position: relative;
+    width: 350px;
+    border-radius: 25px;
+    margin: 30px;
+    img {
+        border-radius: 25px;
+        transition: all .5s;
+    }
+    .contentCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);        
+        width: 100%;
+        height: 70%;
+        color: white;
+        text-align: center;
+        opacity: 0;
+        
+        transition: all .5s;
+        .play {
+            font-size: 100px;
+            color: $primaryColor;
+            transition: all .3s;
+            &:hover {
+                transform: scale(1.3);
+            }
+        }        
+        .socialNetworks {
+            p {
+                font-weight: bold;
+                margin-bottom: 8px;
+            }
+            .icons {
+                display: flex;
+                justify-content: space-evenly;
+                a {
+                    i {
+                        color: #fff;
+                        font-size: 30px;
+
+                        transition: all .3s;
+                        &:hover {
+                            transform: scale(1.3);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &:hover img{
+        opacity: .6;
+    }
+    &:hover .contentCard{
+        opacity: 1;
+    }
+}
+@keyframes cardBorder {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+    
+}
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, red, blue, deeppink, blue, red, deeppink, blue);
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: cardBorder 30s linear infinite;
+}
