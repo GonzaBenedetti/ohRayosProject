@@ -2,22 +2,12 @@
 @import "./partials/variables";
 @import "./partials/normalize";
 
-.containerFluid {
-    max-width: 100%;
-    margin: auto;
-    padding: 8px;
-}
-.container {
-    max-width: 80%;
-    margin: auto;
-    padding: 8px;
-}
-
 body {
     background-color: $background;    
     font-family: $primaryFont;
     color: $primaryColor;
 }
+
 .header {
     nav {
         background-color: rgba(0, 0, 0, 0.555);

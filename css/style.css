@@ -141,18 +141,6 @@ summary {
   display: none;
 }
 
-.containerFluid {
-  max-width: 100%;
-  margin: auto;
-  padding: 8px;
-}
-
-.container {
-  max-width: 80%;
-  margin: auto;
-  padding: 8px;
-}
-
 body {
   background-color: #000000;
   font-family: "Montserrat", sans-serif;
