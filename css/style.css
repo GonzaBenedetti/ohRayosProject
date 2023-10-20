@@ -484,5 +484,16 @@ h3 {
     font-size: 25px;
   }
 }
+@media screen and (max-width: 449px) {
+  footer .containerFooter {
+    padding: 20px;
+  }
+  footer .containerFooter .networks {
+    margin: 35px 5px;
+  }
+  footer .containerFooter .networks a i {
+    margin: 10px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
